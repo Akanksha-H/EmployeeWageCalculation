@@ -10,7 +10,7 @@ public class EmployeeWage {
         int totalWorkingHours = 0;
 
         // Computation
-        while (totalWorkingDays < 20) {
+        while (totalWorkingHours < 100 && totalWorkingDays < 20) {
             int dayCheck = (int) (Math.round(Math.random() * 10) % 3);
 
             switch (dayCheck) {
@@ -23,6 +23,10 @@ public class EmployeeWage {
 
                     System.out.println("Employee is Working Full Time, Wage = " + empWage );
                     System.out.println("Employee total working hours = " + totalWorkingHours );
+
+                    if(totalWorkingHours > 100)
+                        totalWorkingHours = totalWorkingHours - workingHours;
+
                     break;
 
                 case PART_TIME:
@@ -34,6 +38,9 @@ public class EmployeeWage {
 
                     System.out.println("Employee is Working Part Time, Wage  = " + empWage1);
                     System.out.println("Employee part time working hours  = " + totalWorkingHours);
+
+                    if(totalWorkingHours > 100)
+                        totalWorkingHours = totalWorkingHours - workingHours;
                     break;
 
 
