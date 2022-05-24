@@ -5,6 +5,9 @@ public class EmployeeWage {
     static final int PART_TIME = 2;
     public static void main(String[] args) {
         System.out.println("WELCOME_EMPLOYEE_TO_DAILY_WAGE_COMPUTATION");
+        newMethod();
+    }
+    static void newMethod (){
         int workingHours = 0;
         int totalWorkingDays = 0;
         int totalWorkingHours = 0;
