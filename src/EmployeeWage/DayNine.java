@@ -51,7 +51,6 @@ public class DayNine {
 
                 default:
                     System.out.println("Employee is Absent");
-
             }
             if(sumWorkingHours > Company.totalWorkingHours)
                 sumWorkingHours = sumWorkingHours - workHours;
