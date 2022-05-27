@@ -8,6 +8,6 @@ public class ContactVariables {
     String city;
     String zip;
     String state;
-    String number;
+    private String number;
     String email;
 }
